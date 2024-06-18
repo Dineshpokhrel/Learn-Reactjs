@@ -4,12 +4,20 @@ import './App.css'
 function App() {
 
 
-  let [counter, setCounter ] = useState(10)
+  const [counter, setCounter ] = useState(10)
   //let counter = 10
 
   const addValue = () =>{
-    counter = counter + 1
-    setCounter(counter)
+    // counter = counter + 1
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // it will just increase counter by 1 . batch banayara send garchha ani herda chai aautai kaam vako dekhera aauta matra badhauchha
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    // aahile yo bunch of package haina update garna lai aahile yele previous counter liyako chha so 4 le badhchha
   }
   
   const removeValue =() =>{
