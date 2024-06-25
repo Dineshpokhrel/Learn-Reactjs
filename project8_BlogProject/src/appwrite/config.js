@@ -99,7 +99,7 @@ export class Service{
 
     async uploadFile(file){
         try {
-            retrun await this.bucket.createFile(
+            return await this.bucket.createFile(
                 conf.appwriteBucketId,
                 ID.unique(),
                 file
